@@ -83,8 +83,11 @@ class _SpriteMap extends UnmodifiableMapMixin<Point<int>, Sprite> {
   _SpriteMap(this._sprite, this._dimensions);
 
   @override
-  Sprite operator [](covariant Point<int> key) =>
-      _sprite.from(new Rectangle.fromPoints(key, key + _dimensions));
+  Sprite operator [](covariant Point<int> key) => _sprite.from(new Rectangle(
+      key.x * _dimensions.x,
+      key.y * _dimensions.y,
+      _dimensions.x,
+      _dimensions.y));
 
   @override
   bool containsKey(covariant Point<int> key) {

@@ -1,7 +1,7 @@
 name: pixmap
 description: >
   A simple sprite library for Dart web applications.
-version: 0.1.0
+version: 0.2.0
 authors:
   - Matan Lurey <matanl@google.com>
 homepage: https://github.com/matanlurey/pixmap
